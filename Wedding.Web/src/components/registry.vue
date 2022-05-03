@@ -8,12 +8,12 @@
         <v-card-title class="justify-center text-h1">
           Honeymoon Fund & Gift Registry
         </v-card-title>
-        <v-card-text class="text-center">
+        <v-card-text class="text-center text-h6">
           We are thrilled about starting our lives together and we are thankful
           for all of our loved ones and the blessings we've had along the way.
           <br />
           Over the years Clayton and I have been together we've realized that
-          what we remember and cheris the most is the adventures we have
+          what we remember and cherish the most is the adventures we have
           together. We hope to continue our adventures all through our lives and
           marriage and would love to start this new step in our relationship
           with a new adventure together.
@@ -23,7 +23,7 @@
           photo of us buying a super weird candy bar!).
         </v-card-text>
 
-        <v-card-text class="text-center">
+        <v-card-text class="text-center text-h6">
           If cash presents aren't your vibe though, we totally get it. You can
           find a link to a traditional registry below! And if you think your
           presence at our wedding is a gift enough, we agree and are hyped to
@@ -34,6 +34,10 @@
           <v-btn class="mx-2" color="secondary"> Honeymoon Fund </v-btn>
           <v-btn class="mx-2" color="secondary"> Gift Registry </v-btn>
         </v-card-text>
+
+          <v-card-text class="text-center mt-16">
+              <v-btn outlined x-small href="https://unsplash.com/photos/Vhrwyqsz0l0" target="_blank">Photo Credit</v-btn>
+          </v-card-text>
       </v-overlay>
     </v-parallax>
   </v-card>
