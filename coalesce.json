@@ -1,0 +1,16 @@
+{
+  "webProject": {
+    "projectFile": "./Wedding.Web/Wedding.Web.csproj"
+  },
+  "dataProject": {
+    "projectFile": "./Wedding.Data/Wedding.Data.csproj"
+  },
+
+  "rootGenerator": "Vue",
+
+  "generatorConfig": {
+    "Scripts": {
+      "targetDirectory": "../src"
+    }
+  }
+}
