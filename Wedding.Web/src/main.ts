@@ -15,22 +15,23 @@ Vue.use(Vuetify);
 const vuetify = new Vuetify({
   icons: {
     iconfont: "fa", // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4'
-    },
-    treeShake: true,
-    customProperties: true,
-    theme: {
+  },
+  treeShake: true,
+  customProperties: true,
+  theme: {
     options: {
       customProperties: true,
     },
     themes: {
-        dark: {
-            primary: "#753239",
-            secondary: "#97665f",
-            accent: "#7a707b",
-            error: "#df323b", // This is the default error color with darken-1
-        },
+      dark: {
+        primary: "#9d3e33",
+        secondary: "#a44b4c",
+        tertiary: "#723c43",
+        accent: "#44455d",
+        error: "#df323b", // This is the default error color with darken-1
+      },
     },
-        dark: true
+    dark: true,
   },
 });
 
