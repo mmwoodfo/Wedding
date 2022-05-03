@@ -1,32 +1,9 @@
 <template>
   <v-app id="vue-app">
-    <v-navigation-drawer v-model="drawer" app clipped>
-      <v-list>
-        <v-list-item link to="/">
-          <v-list-item-action>
-            <v-icon>fas fa-home</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item link to="/coalesce-example">
-          <v-list-item-action>
-            <v-icon>fas fa-palette</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Coalesce Example</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-app-bar app color="primary" dark dense clipped-left>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+    <v-app-bar app color="primary" dark clipped-left>
       <v-toolbar-title>
         <router-link to="/" class="white--text" style="text-decoration: none">
-          Coalesce Vue Template
+          Gravatt Wedding
         </router-link>
       </v-toolbar-title>
     </v-app-bar>
@@ -47,7 +24,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { Component } from "vue-property-decorator";
+    import { Component } from "vue-property-decorator";
 
 @Component({
   components: {},
