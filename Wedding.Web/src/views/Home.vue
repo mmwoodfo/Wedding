@@ -1,30 +1,10 @@
 <template>
   <div class="home">
     <banner />
-    <wedding-information />
-    <registry />
+    <wedding-information id="wedding-info" />
+    <registry id="registry" />
     <v-card tile color="accent">
-      <v-card-title class="justify-center text-h1">
-        Details Details...
-      </v-card-title>
-      <v-card-text class="text-center text-h6">
-        If you can make the date great! Be sure to register by clicking this
-        button ==> <v-btn color="secondary"> Register </v-btn> <== right here!
-        <br />
-        <br />
-        What's the wedding attire? Check that out here!
-        <v-btn color="secondary"> Wedding Attire </v-btn>
-        <br />
-        <br />
-        Why yes, I did make this website and yes, those are spelling/grammar
-        errors you see.
-        <br />
-        Want to tell me about it?
-        <v-btn href="https://github.com/mmwoodfo/Wedding">Report a bug</v-btn>
-      </v-card-text>
-
-      <v-divider class="my-10" />
-      <v-card-title class="justify-center text-h3">
+      <v-card-title id="engagement-story" class="justify-center text-h3">
         Our Engagement Story
       </v-card-title>
       <v-card-text class="text-center">

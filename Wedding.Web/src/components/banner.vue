@@ -1,23 +1,14 @@
 <template>
-  <v-carousel interval="7000" :height="height" hide-delimiters cycle>
+  <v-carousel
+    :interval="7000"
+    :height="height"
+    hide-delimiters
+    cycle
+    class="banner"
+  >
     <v-carousel-item v-for="(image, i) in bannerImages" :key="i">
       <v-sheet height="100%" color="primary">
         <v-img height="100%" :src="image">
-          <v-row>
-            <v-col cols="6">
-              <v-img
-                class="img-scale-down mr-auto d-flex flex-row"
-                src="https://megclayton2023.blob.core.windows.net/site-photos/flowers-left.png"
-              />
-            </v-col>
-            <v-col cols="6">
-              <v-img
-                class="img-scale-down ml-auto d-flex flex-row-reverse"
-                src="https://megclayton2023.blob.core.windows.net/site-photos/flowers-right.png"
-              />
-            </v-col>
-          </v-row>
-
           <v-overlay absolute color="accent" opacity="0.2">
             <v-card-title class="justify-center text-h1 change-font">
               Meg & Clayton
@@ -30,11 +21,27 @@
         </v-img>
       </v-sheet>
     </v-carousel-item>
+    <div class="overlay">
+      <v-row>
+        <v-col cols="6">
+          <v-img
+            class="img-scale-down mr-auto d-flex flex-row"
+            src="https://megclayton2023.blob.core.windows.net/site-photos/flowers-left.png"
+          />
+        </v-col>
+        <v-col cols="6">
+          <v-img
+            class="img-scale-down ml-auto d-flex flex-row-reverse"
+            src="https://megclayton2023.blob.core.windows.net/site-photos/flowers-right.png"
+          />
+        </v-col>
+      </v-row>
+    </div>
   </v-carousel>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class Banner extends Vue {
@@ -51,9 +58,7 @@ export default class Banner extends Vue {
     if (this.$vuetify.breakpoint.mdAndUp) {
       return 750;
     }
-    if (this.$vuetify.breakpoint.smAndDown) {
-      return 400;
-    }
+    return 400;
   }
 }
 </script>
@@ -78,5 +83,16 @@ export default class Banner extends Vue {
     height: 150px;
     width: 300px;
   }
+}
+
+.banner img {
+  width: 100%;
+  position: relative;
+}
+
+.banner .overlay {
+  position: absolute;
+  top: 0px;
+  width: 100%;
 }
 </style>

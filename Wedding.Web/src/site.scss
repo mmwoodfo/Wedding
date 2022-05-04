@@ -9,6 +9,7 @@
 
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .hidden {
@@ -39,4 +40,21 @@ a {
 .v-application .v-application--wrap .text-h1,
 .v-application .v-application--wrap .text-h3 {
     font-family: 'Brush Script MT' !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .v-application .v-application--wrap .text-h1 {
+        font-size: 45px !important;
+        line-height: normal;
+    }
+
+    .v-application .v-application--wrap .text-h3 {
+        font-size: 30px !important;
+        line-height: normal;
+    }
+
+    .v-application .v-application--wrap .text-h6 {
+        font-size: 16px !important;
+        line-height: normal;
+    }
 }

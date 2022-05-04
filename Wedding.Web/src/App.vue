@@ -6,6 +6,11 @@
           Gravatt Wedding
         </router-link>
       </v-toolbar-title>
+      <v-spacer />
+      <v-btn href="#wedding-info" text> Wedding Information </v-btn>
+      <v-btn href="#registry" text> Registry </v-btn>
+      <v-btn href="#engagement-story" text> Our Engagement Story </v-btn>
+      <v-btn color="accent"> Register for Wedding </v-btn>
     </v-app-bar>
 
     <v-main>
